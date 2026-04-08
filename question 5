@@ -1,0 +1,17 @@
+let N = parseInt(prompt("Enter N:"));
+let seed = parseInt(prompt("Enter seed:"));
+
+let sum = 0 ;
+let i = 1;
+
+while (true) {
+    if (i % (seed + 2) != 0) {
+        sum+=i;
+        if(sum>=N) break;
+    }
+    i++;
+}
+
+
+let m = i ; 
+alert(m+" "+ sum);
