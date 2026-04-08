@@ -1,0 +1,22 @@
+let N = Number(prompt("Enter N:"));
+let K = Number(prompt("Enter K:"));
+
+let found = false;
+
+for (let X = 0; X <= 100000; X++) {
+    
+    
+    let num = N + X;
+    let str = String(num);
+    let reversed = str.split('').reverse().join('');
+
+    if (str === reversed && num % K === 0) {
+        alert(X);
+        found = true;
+        break;
+    }
+}
+
+if (!found) {
+    alert(-1);
+}
