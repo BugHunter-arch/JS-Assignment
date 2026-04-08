@@ -1,0 +1,21 @@
+let N = parseInt(prompt("Enter N: "));
+let seed = parseInt(prompt("Enter seed:"));
+
+for(let i = 0 ; i<3 ; i++){
+    if(N % 2 == 0){
+        N= (N/2) + seed;
+    }
+    else{
+        N= (N*3) - seed;
+    }
+}
+
+let mid= Math.floor(N/10)%10;
+
+if(N>=100 && N<=999 && mid==seed ){
+    alert("Yes" + N);
+    
+}
+else{
+    alert("No" + N);
+}
