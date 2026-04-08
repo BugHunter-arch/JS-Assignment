@@ -1,0 +1,22 @@
+let a = parseInt(prompt("Enter a:"));
+let b = parseInt(prompt("Enter b:"));
+let c = parseInt(prompt("Enter c:"));
+
+let score = 3*a + b - 2*c;
+
+if(score<0){
+    score = 0 ;
+}
+
+let total = a + b + c ;
+
+if(total>50){
+    score -=10;
+}
+
+if(score>=60){
+    alert(score+"PASS");
+}
+else{
+    alert(score+"FAIL");
+}
